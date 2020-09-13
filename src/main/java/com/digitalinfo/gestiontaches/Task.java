@@ -12,5 +12,9 @@ package com.digitalinfo.gestiontaches;
 public class Task {
     public String label;
     public Boolean state;
-
+    
+    public Task(String lbl, Boolean st){
+    label = lbl;
+    state = st;
+    }
 }

@@ -11,7 +11,7 @@ package com.digitalinfo.gestiontaches;
  */
 public class TodoList {
         public static void main(String[] args){
-        Task t = new Task();
+        Task t = new Task("test", false);
         t.label = "Test";
         t.state = false;
         
