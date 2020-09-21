@@ -13,8 +13,18 @@ public class Task {
     public String label;
     public Boolean state;
     
-    public Task(String lbl, Boolean st){
-    label = lbl;
-    state = st;
+    public Task(String label, Boolean state){
+    this.label = label;
+    this.state = state;
+    }
+    public String toString(){
+        return "Taches '" + this.label + "' => " + this.state;
+}
+    public void done(){
+        state = true;
+    }
+    public Boolean isDone(){
+        return state;
     }
 }
+

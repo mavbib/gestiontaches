@@ -12,9 +12,19 @@ package com.digitalinfo.gestiontaches;
 public class TodoList {
         public static void main(String[] args){
         Task t = new Task("test", false);
-        t.label = "Test";
-        t.state = false;
+        Task t2 = new Task("test2", false);
+        //t.label = "Test";
+        //t.state = false;
         
-        System.out.println("Taches '" + t.label + "' => " + t.state);
+        System.out.println(t);
+        System.out.println(t2);
+        t.done();
+        System.out.println(t);
+        
+        if (t2.isDone()){
+            System.out.println("Tache effectuee!");
+        }else{
+            System.out.println("Tache a faire!");
+        }
     }
 }
